@@ -9,38 +9,97 @@ my VS Code Settings about vim.
 ```json
 "vim.useCtrlKeys": true,
 "vim.handleKeys": {
-    "<C-w>": false,
+    "<C-w>": true,
     "<C-f>": false
 },
 "vim.insertModeKeyBindings": [
     // insert模式退出normal模式
     {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
+        "before": [
+            "j",
+            "j"
+        ],
+        "after": [
+            "<Esc>"
+        ]
     }
 ],
 "vim.normalModeKeyBindings": [
-    // 光标移到到行首或行尾
     {
-        "before": ["H"],
-        "after": ["^"]
+        "before": [
+            "H"
+        ],
+        "after": [
+            "^"
+        ]
     },
     {
-        "before": ["L"],
-        "after": ["g", "_"]
-    }
+        "before": [
+            "L"
+        ],
+        "after": [
+            "g",
+            "_"
+        ]
+    },
+    {
+        "before": [
+            "J"
+        ],
+        "after": [
+            "5",
+            "j"
+        ]
+    },
+    {
+        "before": [
+            "K"
+        ],
+        "after": [
+            "5",
+            "k"
+        ]
+    },
+],
+"vim.visualModeKeyBindings": [
+    {
+        "before": [
+            "J"
+        ],
+        "after": [
+            "5",
+            "j"
+        ]
+    },
+    {
+        "before": [
+            "K"
+        ],
+        "after": [
+            "5",
+            "k"
+        ]
+    },
 ],
 "vim.operatorPendingModeKeyBindings": [
-    // 操作到行首或行尾
     {
-        "before": ["H"],
-        "after": ["^"]
+        "before": [
+            "H"
+        ],
+        "after": [
+            "^"
+        ]
     },
     {
-        "before": ["L"],
-        "after": ["g", "_"]
+        "before": [
+            "L"
+        ],
+        "after": [
+            "g",
+            "_"
+        ]
     }
-],
+]
 ```
 
 ## macos
@@ -61,7 +120,8 @@ my VS Code Settings about vim.
 ```json
 // 防止insert模式下 ctrl + c 会进入到 normal 模式
 "vim.handleKeys": {
-    "<C-c>": false
+    "<C-c>": false,
+    "<C-d>": false
 },
 ```
 
