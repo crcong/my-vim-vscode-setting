@@ -123,7 +123,8 @@ my VS Code Settings about vim.
 // 防止insert模式下 ctrl + c 会进入到 normal 模式
 "vim.handleKeys": {
     "<C-c>": false,
-    "<C-d>": false
+    "<C-d>": false,
+    "<C-b>": false
 },
 ```
 
