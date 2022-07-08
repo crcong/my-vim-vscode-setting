@@ -99,7 +99,9 @@ my VS Code Settings about vim.
             "_"
         ]
     }
-]
+],
+// 折叠鼠标经过不会自动展开
+"vim.foldfix": true,
 ```
 
 ## macos
