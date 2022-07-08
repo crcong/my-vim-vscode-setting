@@ -8,10 +8,7 @@ my VS Code Settings about vim.
 
 ```json
 "vim.useCtrlKeys": true,
-"vim.handleKeys": {
-    "<C-w>": true,
-    "<C-f>": false
-},
+"vim.handleKeys": {},
 "vim.insertModeKeyBindings": [
     // insert模式退出normal模式
     {
@@ -124,7 +121,8 @@ my VS Code Settings about vim.
 "vim.handleKeys": {
     "<C-c>": false,
     "<C-d>": false,
-    "<C-b>": false
+    "<C-b>": false,
+    "<C-f>": false
 },
 ```
 
