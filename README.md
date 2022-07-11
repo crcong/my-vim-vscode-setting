@@ -7,6 +7,12 @@ my VS Code Settings about vim.
 ### settings.json
 
 ```json
+// 折叠鼠标经过不会自动展开
+"vim.foldfix": true,
+"vim.sneak": true,
+"vim.easymotion": true,
+"vim.leader": "<space>",
+"vim.useSystemClipboard": true,
 "vim.useCtrlKeys": true,
 "vim.handleKeys": {},
 "vim.insertModeKeyBindings": [
@@ -95,10 +101,78 @@ my VS Code Settings about vim.
             "g",
             "_"
         ]
+    },
+    {
+        "before": [
+            "z"
+        ],
+        "after": [
+            "f"
+        ]
+    },
+    {
+        "before": [
+            "Z"
+        ],
+        "after": [
+            "F"
+        ]
     }
 ],
-// 折叠鼠标经过不会自动展开
-"vim.foldfix": true,
+"vim.normalModeKeyBindingsNonRecursive": [
+    {
+        "before": [
+            "s"
+        ],
+        "after": [
+            "f"
+        ],
+    },
+    {
+        "before": [
+            "S"
+        ],
+        "after": [
+            "F"
+        ],
+    },
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+    {
+        "before": [
+            "f"
+        ],
+        "after": [
+            "s"
+        ]
+    },
+    {
+        "before": [
+            "F"
+        ],
+        "after": [
+            "S"
+        ]
+    },
+    {
+        "before": [
+            "s"
+        ],
+        "after": [
+            "c",
+            "l"
+        ]
+    },
+    {
+        "before": [
+            "S"
+        ],
+        "after": [
+            "^",
+            "C"
+        ]
+    },
+],
 ```
 
 ## macos
@@ -125,4 +199,3 @@ my VS Code Settings about vim.
     "<C-v>": false,
 },
 ```
-
